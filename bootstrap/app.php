@@ -78,6 +78,7 @@ $app->configure('app');
 
 $app->routeMiddleware([
     'auth' => App\Http\Middleware\AuthMiddleware::class,
+    'role.admin' => App\Http\Middleware\AdminRole::class,
 ]);
 
 /*
